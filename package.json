@@ -1,0 +1,23 @@
+{
+  "name": "stat-o-rama",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajvalde/stat-o-rama.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajvalde/stat-o-rama/issues"
+  },
+  "homepage": "https://github.com/ajvalde/stat-o-rama#readme",
+  "devDependencies": {
+    "electron": "^1.6.2"
+  }
+}
