@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Welcome.</h1>
+   <h1 class="lame">Lame</h1>
   </div>
 </template>
 
@@ -14,9 +14,3 @@
   }
 </script>
 
-<style scoped>
-  img {
-    margin-top: -25px;
-    width: 450px;
-  }
-</style>

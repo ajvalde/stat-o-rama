@@ -11,6 +11,8 @@ Vue.use(Electron)
 Vue.use(Resource)
 Vue.use(Router)
 Vue.use(VueMaterial)
+
+
 Vue.config.debug = true
 
 const router = new Router({
