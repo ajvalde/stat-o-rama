@@ -1,20 +1,22 @@
 <template>
-  <div class="ink-flex">
-    <div class="logo column-group push-center">
-      <img class="animated infinite pulse" src="./images/newlogo.png" alt="">
-    </div>
-  </div>
+ <div>
+    <logo></logo> 
+    <search-bar></search-bar>
+    <buttons></buttons> 
+ </div>
   
-  
-
   
 </template>
 
 <script>
-  import Form from './LandingPageView/Form'
+  import Logo from './LandingPageView/Logo'
+  import SearchBar from './LandingPageView/SearchBar'
+  import Buttons from './LandingPageView/Buttons'
   export default {
     components: {
-      Form
+      Logo,
+      SearchBar,
+      Buttons
     },
     name: 'landing-page'
   }
@@ -25,9 +27,7 @@
    background-image: url("./images/hixs_pattern_evolution.png");
  }
  
- .logo {
-    margin-top: 5em;
- }
+
 
  
 
