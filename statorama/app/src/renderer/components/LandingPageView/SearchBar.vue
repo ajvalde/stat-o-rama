@@ -5,11 +5,11 @@
             <div class="control-group">
                 <label for="email">ENTER SUMMONER NAME TO SEARCH FOR STATS</label>
                 <div class="control">
-                    <input id="summoner" name="summoner" type="text" placeholder="Summoner Name">
+                    <input id="summoner_name" v-model="summoner_name" name="summoner_name" type="text" placeholder="Summoner Name">
                 </div>
             </div>
             <div class="column-group push-center">
-                <button class="btn ink-button blue">SEARCH</button>
+                <button v-on:click="searchInput" class="btn ink-button blue">SEARCH</button>
             </div>
         </form>
     </div>
@@ -27,3 +27,23 @@
 
 
 </style>
+
+<script>
+    export default {
+        data: function () {
+            return {
+                summoner_name: ''
+            };
+        },
+
+    methods: {
+        searchInput: function () {
+          let data = {summoner_name: this.summoner_name}
+           this.$http.post('http://localhost:8080/league', data).then(function(response){
+                console.log(response.data)
+           })
+        }
+    }
+}
+    
+</script>
