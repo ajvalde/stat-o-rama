@@ -1,4 +1,5 @@
 import SignUp from 'components/SignUp';
+import Stats from 'components/Stats';
 export default [
   {
     path: '/',
