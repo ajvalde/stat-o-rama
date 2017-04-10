@@ -9,7 +9,7 @@
             </div>
         </form>
             <div class=" blue push-right all-50">
-                    <button class="ink-button">SEARCH</button>
+                    <button class="search-btn ink-button">SEARCH</button>
             </div>
     </div>
     </div>
@@ -25,6 +25,21 @@
 
     .hey {
         margin-top: 2em;
+    }
+
+    .search-btn {
+        height: 41px;
+        margin-top: 34px;;
+        background-color: #278AFA;
+        border: 0;
+        color: white;
+    }
+
+    .search-btn:hover {
+        background-color: #151515;
+        border: 0;
+        color: #278AFA;
+        
     }
 
 </style>

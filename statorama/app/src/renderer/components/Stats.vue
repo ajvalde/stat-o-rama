@@ -2,6 +2,7 @@
     <div>  
         <div class="ink-grid push-right all-70">
         <topsearch></topsearch>
+        <playerstats></playerstats>
         </div>
         <sidenav></sidenav>
     </div>
@@ -10,10 +11,12 @@
 <script>
     import sidenav from './Stats/sidenav'
     import topsearch from './Stats/topsearch'
+    import playerstats from './Stats/playerstats'
     export default {
         components: {
             sidenav,
-            topsearch
+            topsearch,
+            playerstats
         },
         name: 'stats'
     }
