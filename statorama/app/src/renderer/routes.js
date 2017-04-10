@@ -11,5 +11,10 @@ export default [
     name: 'sign-up',
     component: SignUp
     
+  },
+  {
+    path: '/stats',
+    name: 'stats',
+    component: Stats
   }
 ]

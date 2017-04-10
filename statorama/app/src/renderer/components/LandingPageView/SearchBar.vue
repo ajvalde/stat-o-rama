@@ -9,7 +9,7 @@
                 </div>
             </div>
             <div class="column-group push-center">
-                <button v-on:click="searchInput" class="btn ink-button blue">SEARCH</button>
+                <button v-on:click="searchInput" class="btn ink-button blue"> <router-link to="/stats" >SEARCH</router-link></button>
             </div>
         </form>
     </div>
@@ -40,7 +40,7 @@
         searchInput: function () {
           let data = {summoner_name: this.summoner_name}
            this.$http.post('http://localhost:8080/league', data).then(function(response){
-                console.log(response.data)
+                
            })
         }
     }

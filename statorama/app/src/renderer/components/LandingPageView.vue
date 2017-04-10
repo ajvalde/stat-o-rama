@@ -2,7 +2,6 @@
  <div>
     <logo></logo> 
     <search-bar></search-bar>
-    <buttons></buttons> 
  </div>
   
   
