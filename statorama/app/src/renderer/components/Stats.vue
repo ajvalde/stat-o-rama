@@ -1,8 +1,8 @@
 <template>
     
-    <div class="ink-grid">  
+    <div >  
         
-       <topsearch></topsearch>
+       
         <playerstats></playerstats>
         
        
