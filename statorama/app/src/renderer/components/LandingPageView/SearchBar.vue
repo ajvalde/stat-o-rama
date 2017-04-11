@@ -5,7 +5,7 @@
             <div class="control-group">
                 <label for="email">ENTER SUMMONER NAME TO SEARCH FOR STATS</label>
                 <div class="control">
-                    <input id="summoner_name" v-model="summoner_name" name="summoner_name" type="text" placeholder="Summoner Name">
+                    <input v-on:keyup.enter="searchInput" id="summoner_name" v-model="summoner_name" name="summoner_name" type="text" placeholder="Summoner Name">
                 </div>
             </div>
             <div class="column-group push-center">
