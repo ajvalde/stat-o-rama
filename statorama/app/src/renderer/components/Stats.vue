@@ -2,7 +2,7 @@
     
     <div class="ink-grid">  
         
-        
+       <topsearch></topsearch>
         <playerstats></playerstats>
         
        
