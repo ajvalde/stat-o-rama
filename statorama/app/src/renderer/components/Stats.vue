@@ -1,10 +1,11 @@
 <template>
-    <div>  
-        <div class="ink-grid push-right all-70">
-        <topsearch></topsearch>
+    
+    <div class="ink-grid">  
+        
+        
         <playerstats></playerstats>
-        </div>
-        <sidenav></sidenav>
+        
+       
     </div>
 </template>
 

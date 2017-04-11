@@ -1,6 +1,6 @@
 <template>
     <div class="ink-grid ink-flex">
-    <div class="column-group push-left">
+    <div class="column-group push-center">
         <form class="hey ink-form all-50">
             <div class="control-group">
                 <div class="control">

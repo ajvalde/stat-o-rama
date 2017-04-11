@@ -3,7 +3,7 @@
       <nav class="side-nav ink-navigation">
         <ul class="menu vertical">
             <li class="heading active"> <button class="nav-btn ink-button ">OVERVIEW</button> </li>
-            <li class="heading active"> <button class="nav-btn ink-button ">HISTORY</button> </li>
+            <li class="heading active"> <button class="nav-btn ink-button "><router-link to="/">HISTORY</router-link></button> </li>
         </ul>
     </nav>
 </div>
