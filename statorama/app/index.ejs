@@ -9,12 +9,15 @@
         require('module').globalPaths.push('<%= htmlWebpackPlugin.options.appModules.replace(/\\/g, '\\\\') %>')
       </script>
     <% } %>
-     
+     <link rel="stylesheet" type="text/css" href="http://fastly.ink.sapo.pt/3.1.10/css/ink.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+     <link rel="stylesheet" href="http://cdn.ink.sapo.pt/3.1.10/css/ink-flex.css">
   </head>
   <body>
-     <h1>this is lame</h1>
+   
     <div id="app"></div>
    
     <!-- webpack builds are automatically injected -->
+    <script type="text/javascript" src="http://fastly.ink.sapo.pt/3.1.10/js/ink-all.js"></script>
   </body>
 </html>

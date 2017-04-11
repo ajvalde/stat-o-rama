@@ -1,3 +1,5 @@
+import SignUp from 'components/SignUp';
+import Stats from 'components/Stats';
 export default [
   {
     path: '/',
@@ -5,7 +7,14 @@ export default [
     component: require('components/LandingPageView')
   },
   {
-    path: '*',
-    redirect: '/'
+    path: '/signup',
+    name: 'sign-up',
+    component: SignUp
+    
+  },
+  {
+    path: '/stats',
+    name: 'stats',
+    component: Stats
   }
 ]
