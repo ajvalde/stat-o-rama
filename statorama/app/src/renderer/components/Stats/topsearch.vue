@@ -4,12 +4,12 @@
         <form class="hey ink-form all-50">
             <div class="control-group">
                 <div class="control">
-                    <input id="name" name="name" type="text">                
+                    <input id="summoner_name" v-model="summoner_name" name="summoner_name" type="text" placeholder="Summoner Name">                
                 </div>
             </div>
         </form>
             <div class=" blue push-right all-50">
-                    <button class="search-btn ink-button">SEARCH</button>
+                    <button v-on:click="searchInput" class="search-btn ink-button"> <router-link to="/stats" >SEARCH</router-link> </button>
             </div>
     </div>
     </div>
@@ -43,3 +43,23 @@
     }
 
 </style>
+
+<script>
+    export default {
+        data: function () {
+            return {
+                summoner_name: ''
+            };
+        },
+
+    methods: {
+        searchInput: function () {
+          let data = {summoner_name: this.summoner_name}
+           this.$http.post('http://localhost:8080/league', data).then(function(response){
+                
+           })
+        }
+    }
+}
+    
+</script>
