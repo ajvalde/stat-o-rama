@@ -1,22 +1,34 @@
 <template>
-  <div>
-    <h1>Welcome.</h1>
-  </div>
+ <div>
+    <logo></logo> 
+    <search-bar></search-bar>
+ </div>
+  
+  
 </template>
 
 <script>
-
+  import Logo from './LandingPageView/Logo'
+  import SearchBar from './LandingPageView/SearchBar'
+  import Buttons from './LandingPageView/Buttons'
   export default {
     components: {
-    
+      Logo,
+      SearchBar,
+      Buttons
     },
     name: 'landing-page'
   }
 </script>
 
-<style scoped>
-  img {
-    margin-top: -25px;
-    width: 450px;
-  }
+<style>
+ body {
+   background-image: url("./images/hixs_pattern_evolution.png");
+ }
+ 
+
+
+ 
+
+
 </style>
