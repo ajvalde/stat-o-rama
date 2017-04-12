@@ -18,9 +18,9 @@
      
     <div class="ink-grid">
         <h1 class="align-center">{{ playerSummary.name }}</h1>
-
+<div class="stat column-group">
         <div class="column-group gutters">
-            <div class="card push-center all-50 small-100 tiny-100">
+            <div class="card push-left all-50 small-100 tiny-100">
         
                 <h2 class="align-center">Unranked</h2>
                 <h4 class="align-center all-50">Wins:</h4>
@@ -39,7 +39,7 @@
         </div>
 
         <div class="column-group gutters">
-            <div class="card push-center all-50 small-100 tiny-100">
+            <div class="card push-left all-50 small-100 tiny-100">
         
                 <h2 class="align-center">Ranked Solo</h2>
                 <h4 class="align-center all-50">Wins:</h4>
@@ -57,7 +57,7 @@
         </div>
 
         <div class="column-group gutters">
-            <div class="card push-center all-50 small-100 tiny-100">
+            <div class="card push-left all-50 small-100 tiny-100">
         
                 <h2 class="align-center">Ranked Flex</h2>
                 <h4 class="align-center all-50">Wins:</h4>
@@ -75,7 +75,7 @@
         </div>
        
 <div class="column-group gutters">
-            <div class="card push-center all-50 small-100 tiny-100">
+            <div class="card push-left all-50 small-100 tiny-100">
         
                 <h2 class="align-center">Aram</h2>
                 <h4 class="align-center all-50">Wins:</h4>
@@ -90,6 +90,41 @@
             </div>
         </div>
     </div>
+
+</div>
+    
+
+
+
+    <div class="column-group push-right gutters">
+            <div class="top-card push-top all-50 small-100 tiny-100">
+        
+                <h2 class="align-center">Top 3 Champions</h2>
+
+                <div class="push-center column-group ink-grid horizontal-gutters">
+                    <div class="all-30">
+                        <p class="align-center">{{playerSummary.top3[0].name}}</p>
+                        
+                        <img v-bind:src="playerSummary.top3[0].images" alt="">
+                    </div>
+
+                    <div class="all-30">
+                        <p class="align-center">{{playerSummary.top3[1].name}}</p>
+                        <img v-bind:src="playerSummary.top3[1].images" alt="">
+                    </div>
+
+                    <div class="all-30">
+                        <p class="align-center">{{playerSummary.top3[2].name}}</p>
+                        
+                        <img v-bind:src="playerSummary.top3[2].images" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    
     
     
     </div>
@@ -140,9 +175,10 @@
 
 <style>
     .card {
-        width: 36em;
+        width: 23em;
         height: 17em;
         margin-right: 13em;
+        margin-left: 3em;
         box-shadow: 5px 5px 5px black;
         border-radius: 25px;
         background-image: url("../images/diagmonds.png");
@@ -153,6 +189,26 @@
         color: white;
     }
 
+    .stat {
+        height: 0px;;
+    }
 
+.top-card{
+        width: 35em;
+        height: 17em;
+        margin-right: 2em;
+        margin-left: 1em;
+        box-shadow: 5px 5px 5px black;
+        border-radius: 25px;
+        background-image: url("../images/diagmonds.png");
+        color: white;
+}
+
+img {
+    border-radius: 50%;
+    border-width: 5px;
+    border-color: #278AFA;
+    border-style: solid;
+}
 
 </style>
