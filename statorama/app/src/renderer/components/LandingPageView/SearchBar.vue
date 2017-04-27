@@ -3,7 +3,7 @@
     <div class="form column-group push-center">
         <form class="ink-form">
             <div class="control-group">
-                <label for="email">ENTER SUMMONER NAME TO SEARCH FOR STATS</label>
+                <label class="labs" for="email">ENTER SUMMONER NAME TO SEARCH FOR STATS</label>
                 <div class="control">
                     <input v-on:keyup.enter="searchInput" id="summoner_name" v-model="summoner_name" name="summoner_name" type="text" placeholder="Summoner Name">
                 </div>
@@ -24,6 +24,7 @@
        font-family: Audiowide;
        font-size: 25px;
     }
+  
 
 
 </style>

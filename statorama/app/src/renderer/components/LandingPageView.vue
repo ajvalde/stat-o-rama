@@ -23,7 +23,7 @@
 
 <style>
  body {
-   background-image: url("./images/hixs_pattern_evolution.png");
+   background-image: url("../components/images/hixs_pattern_evolution.png");
  }
  
 

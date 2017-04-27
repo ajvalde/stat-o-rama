@@ -17,7 +17,7 @@
     </div>
      
     <div class="ink-grid">
-        <h1 class="align-center">{{ playerSummary.name }}</h1>
+        <h1 class="labs align-center">{{ playerSummary.name }}</h1>
 <div class="stat column-group">
         <div class="column-group gutters">
             <div class="card push-left all-50 small-100 tiny-100">
@@ -105,21 +105,33 @@
                     <div class="all-30">
                         <p class="align-center">{{playerSummary.top3[0].name}}</p>
                         
-                        <img v-bind:src="playerSummary.top3[0].images" alt="">
+                        <img class="cimg"v-bind:src="playerSummary.top3[0].images" alt="">
                     </div>
 
                     <div class="all-30">
                         <p class="align-center">{{playerSummary.top3[1].name}}</p>
-                        <img v-bind:src="playerSummary.top3[1].images" alt="">
+                        <img class="cimg" v-bind:src="playerSummary.top3[1].images" alt="">
                     </div>
 
                     <div class="all-30">
                         <p class="align-center">{{playerSummary.top3[2].name}}</p>
                         
-                        <img v-bind:src="playerSummary.top3[2].images" alt="">
+                        <img class="cimg" v-bind:src="playerSummary.top3[2].images" alt="">
                     </div>
                 </div>
+            </div>
+            <div class="follow-card push-top all-50 small-100 tiny-100">
+        
+                <h2 class="align-center">Fellow Summoners</h2>
 
+                <div class=" align-left column-group ink-grid horizontal-gutters">
+                    <div class="all-30">
+                      <ul>
+                        <li v-for="follow in follows">
+                            <p class="yo">{{follow}}</p>
+                        </li>
+                      </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -134,8 +146,8 @@
     export default {
         data: function () {
             return {
-                playerSummary: {}
-               
+                playerSummary: {},
+                follows: ["synstar", "Madd Solar", "keywing"]
                 
             };
         },
@@ -204,11 +216,29 @@
         color: white;
 }
 
-img {
+.cimg {
     border-radius: 50%;
     border-width: 5px;
     border-color: #278AFA;
     border-style: solid;
 }
+
+li {
+    list-style-type: none;
+}
+ .yo {
+     font-size: 20px;
+ }
+
+ .follow-card {
+        width: 35em;
+        height: 118vh;
+        margin-right: 2em;
+        margin-left: 1em;
+        box-shadow: 5px 5px 5px black;
+        border-radius: 25px;
+        background-image: url("../images/diagmonds.png");
+        color: white;
+ }
 
 </style>
